@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row app-container flex flex-column">
+      <h1 class="head col-12 text-center mb-3">List Sorting App</h1>
+      
+      <h2 class="mb-3 ml-3">Please Enter a list of names in each input in Below Format</h2>
+      <p class="col-md-5 col-sm-12 ">eg List-A: ['Arjun','Adwait','Swapnil','Amit','Vishal','Adnan']</p>
+      <p class="col-md-5 col-sm-12">eg List-B: ['Adwait','Laxman','Amit','Adnan','Nitin','Gaurav']</p>
+      <p class="col-12">The above are the default inputs</p>
+      
+      <div class="col-12 col-md-8 mb-2">
+        <label for="lista" class="list-label">List-A:</label>
+        <input type="input" placeholder="Enter a list of names" id="lista" class="list-input ml-2 pd-3">
+      </div>
+      <div class="col-12 col-md-8 mb-2">
+        <label for="listb" class="list-label">List-B:</label>
+        <input type="input" placeholder="Enter a list of names" id="listb" class="list-input ml-2 pd-3">
+      </div>
+      <div class="col-12">
+        <h2 class="mt-4">Get Names in List-A and not in List-B</h2>
+        <div class="d-flex flex-row">
+            <textarea rows="2" cols="50" class="text-area mr-4" id="uniqueListA"></textarea>
+            <button class="btn btn-primary click-here-btn" onclick="textAreaA()">Get Names</button>
+        </div>
+      </div>
+      <div class="col-12">
+        <h2 class="mt-4">Get Names in List-B and not in List-A</h2>
+        <div class="d-flex flex-row">
+            <textarea rows="2" cols="50" class="text-area mr-4" id="uniqueListB"></textarea>
+            <button class="btn btn-primary click-here-btn" onclick="textAreaB()">Get Names</button>
+        </div>
+      </div>
+      <div class="col-12">
+        <h2 class="mt-4">Get Names in List-A and in List-B</h2>
+        <div class="d-flex flex-row">
+            <textarea rows="2" cols="50" class="text-area mr-4" id="uniqueListAB"></textarea>
+            <button class="btn btn-primary click-here-btn" onclick="textAreaC()">Get Names</button>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary mt-4" onclick="textAreaD()">Get all</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+
+body {
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+.app-container{
+    background-color: blueviolet;
+    padding: 5px;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: auto;
+}
+
+.head {
+    font-size: 32px;
+}
+
+.list-label{
+    font-size: 26px;
+}
+
+.list-input{
+    width: 450px;
+    height: 40px;
+    outline: none;
+    color: black;
+}
+
+.click-here-btn{
+    width: 130px;
+    height: 29px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.click-here-btn:hover{
+    cursor: pointer;
+}
+
+.text-area{
+    color: black;
+}
